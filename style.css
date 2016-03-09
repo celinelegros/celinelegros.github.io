@@ -2,6 +2,7 @@ body{
   background: white;
   margin: 0px;
   position: relative;
+  font-family : 'Roboto Slab', sans-serif;
 }
 
 .page{
@@ -15,17 +16,24 @@ body{
 }
 
 #HomePage .center {
-  width: 500px;
-  height: 330px;
+  width: 800px;
+  height: 220px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -165px;
-  margin-left: -250px;
-  text-align: center;
+  margin-top: -110px;
+  margin-left: -400px;
 }
 
-#HomePage .center .profile_picture {
+#HomePage .center .left{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom:0px;
+  width: 240px;
+}
+
+#HomePage .center .left .profile_picture {
   width: 200px;
   height: 200px;
   overflow: hidden;
@@ -34,26 +42,55 @@ body{
   border: 6px solid whitesmoke;
 }
 
-#HomePage .center .profile_picture img {
+#HomePage .center .left .profile_picture:hover{
+  -webkit-animation: profil_picture_rotate .5s infinite; /* Chrome, Safari, Opera */
+  animation: profil_picture_rotate .5s infinite;
+}
+
+#HomePage .center .left .profile_picture img {
     width: 215px;
 }
 
-#HomePage .center .profile_text{
+#HomePage .center .right{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom:0px;
+  width: 560px;
+}
+#HomePage .center .right .profile_text{
   color: white;
 }
+#HomePage .center .right .profile_text h1{
+  font-family: 'Ubuntu', serif;
+  margin:0px;
+  font-size: 40px;
+  margin-top: 30px;
+}
+#HomePage .center .right .profile_text p{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
-#HomePage .center .button_next {
-  width: 20px;
-  height: 20px;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+#HomePage .center .right .button_next {
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
   position: absolute;
   left: 50%;
-  margin-left: -10px;
-  cursor:pointer;
+  margin-left: -20px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.2);
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  font-size: 30px;
+
+
+}
+#HomePage .center .right .button_next:hover{
+  -webkit-animation: mymove .5s infinite; /* Chrome, Safari, Opera */
+  animation: mymove .5s infinite;
 }
 
 #Illustration{
@@ -124,3 +161,63 @@ On peut le réutilisé plus tard
   filter: url(grayscale.svg); /* Firefox 4+ */
   filter: gray; /* IE 6-9 */
 }
+
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    0%   {margin-top: -0px;}
+    25%  {margin-top: -10px;}
+    50%  {margin-top: -5px;}
+    75%  {margin-top: -10px;}
+    100% {margin-top: -0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {margin-top: -0px;}
+    25%  {margin-top: -10px;}
+    50%  {margin-top: -5px;}
+    75%  {margin-top: -10px;}
+    100% {margin-top: -0px;}
+}
+
+@-webkit-keyframes profil_picture_rotate {
+    0%    {    -webkit-transform: rotate(0deg);}
+    25%   {    -webkit-transform: rotate(20deg);}
+    50%   {    -webkit-transform: rotate(0deg);}
+    75%   {    -webkit-transform: rotate(-20deg);}
+    100%  {    -webkit-transform: rotate(0deg);}
+}
+
+/* Standard syntax */
+@keyframes profil_picture_rotate {
+    0%    {    -webkit-transform: rotate(0deg);}
+    25%   {    -webkit-transform: rotate(20deg);}
+    50%   {    -webkit-transform: rotate(0deg);}
+    75%   {    -webkit-transform: rotate(-20deg);}
+    100%  {    -webkit-transform: rotate(0deg);}
+}
+
+/*
+@-webkit-keyframes profil_picture_rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes profil_picture_rotate {
+  from {
+    -moz-transform: rotate(0deg);
+
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+*/
