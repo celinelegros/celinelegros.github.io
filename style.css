@@ -73,6 +73,13 @@ body{
   margin-bottom: 20px;
 }
 
+#HomePage .center .right .profile_text p .headline{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Ubuntu',sans-serif;
+}
+
 #HomePage .center .right .button_next {
   width: 40px;
   height: 40px;
