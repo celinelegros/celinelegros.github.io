@@ -20,7 +20,7 @@ var goToPage = function(num){
   }, 'slow',function(){
     setTimeout(function() {
       isAnimating = false;
-    },100)
+    },200)
   });
 }
 
