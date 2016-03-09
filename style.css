@@ -11,32 +11,38 @@ body{
 }
 
 #HomePage{
+  background: #3E606F;
 }
 
-#HomePage .profile_picture {
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 100px;
-  display: inline-block;
-}
-
-#HomePage .profile_picture img {
-    width: 215px;
-}
-
-.center {
+#HomePage .center {
   width: 500px;
-  height: 400px;
+  height: 330px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -200px;
+  margin-top: -165px;
   margin-left: -250px;
   text-align: center;
 }
 
-.button_next {
+#HomePage .center .profile_picture {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 106px;
+  display: inline-block;
+  border: 6px solid whitesmoke;
+}
+
+#HomePage .center .profile_picture img {
+    width: 215px;
+}
+
+#HomePage .center .profile_text{
+  color: white;
+}
+
+#HomePage .center .button_next {
   width: 20px;
   height: 20px;
   border-right: 2px solid black;
@@ -48,4 +54,73 @@ body{
   left: 50%;
   margin-left: -10px;
   cursor:pointer;
+}
+
+#Illustration{
+  background: #D1DBBD;
+}
+
+#Illustration .center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 420px;
+  margin-left: -400px;
+  margin-top: -210px;
+}
+
+#Illustration .center .left{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom:0px;
+  width: 240px;
+}
+
+#Illustration .center .left h2{
+  font-size: 50px;
+  margin: 0px;
+}
+
+#Illustration .center .right{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom:0px;
+  width: 560px;
+  text-align: right;
+}
+
+#Illustration .center .right .gallerie{
+  text-align: right;
+}
+
+#Illustration .center .right .gallerie .illu{
+  width: 240px;
+  height: 160px;
+  margin: 10px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#Illustration .center .right .button_illu{
+   border: 2px solid red;
+   border-radius: 10px;
+   display: inline-block;
+   padding: 10px;
+}
+
+
+/*
+On peut le réutilisé plus tard
+*/
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(grayscale.svg); /* Firefox 4+ */
+  filter: gray; /* IE 6-9 */
 }
