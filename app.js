@@ -57,3 +57,11 @@ Btn_go_to_illu.on('click',function(event){
   goToPage(1);
 
 })
+
+
+/*
+*/
+$('.button_illu').on('click',function(e){
+  e.preventDefault();
+  window.open('http://www.behance.net/CelineLegros','_blank');
+})
