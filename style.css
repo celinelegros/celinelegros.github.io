@@ -1,0 +1,51 @@
+body{
+  background: white;
+  margin: 0px;
+  position: relative;
+}
+
+.page{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#HomePage{
+}
+
+#HomePage .profile_picture {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+#HomePage .profile_picture img {
+    width: 215px;
+}
+
+.center {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -250px;
+  text-align: center;
+}
+
+.button_next {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  cursor:pointer;
+}
