@@ -16,7 +16,7 @@ var goToPage = function(num){
   isAnimating = true;
   currentPage = num;
   $('html, body').animate({
-    scrollTop: pagesTop[num]
+    scrollTop: $(pages[num]).position().top
   }, 'slow',function(){
     setTimeout(function() {
       isAnimating = false;
@@ -30,7 +30,6 @@ Quand on scroll, on va la page suivante (ou précedente)
 */
 
 $(window).scroll(function(event){
-  console.log(isAnimating)
   var current = $(this).scrollTop()
   if(!isAnimating){
 
@@ -42,8 +41,6 @@ $(window).scroll(function(event){
             goToPage(currentPage-1)
          }
    }
-   console.log('last : '+ lastScrollTop)
-   console.log('curr : '+ current)
    lastScrollTop = current;
 });
 
