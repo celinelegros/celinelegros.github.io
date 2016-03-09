@@ -41,6 +41,7 @@ body{
   border-radius: 106px;
   display: inline-block;
   border: 6px solid whitesmoke;
+  box-shadow : 1px 0px 10px 5px rgba(0, 0, 0, 0.2)
 }
 
 #HomePage .center .left .profile_picture:hover{
