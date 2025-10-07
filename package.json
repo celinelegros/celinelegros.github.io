@@ -1,0 +1,17 @@
+{
+  "name": "celinelegros.github.io",
+  "version": "1.0.0",
+  "description": "Site personnel de Céline Legros",
+  "main": "index.html",
+  "scripts": {
+  "start": "live-server --watch=css,./index.html",
+    "sass": "npx sass css/style.scss css/style.css",
+    "sass:watch": "npx sass --watch css/style.scss:css/style.css"
+  },
+  "author": "Céline Legros",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.5"
+  }
+}
